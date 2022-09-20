@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        .header {
+            text-align: center;
+            padding: 40px;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0 5px;
+        }
+
+        .colomn {
+            flex: 25%;
+            max-width: 25%;
+            padding: 0 5px;
+
+        }
+
+        .colomn img {
+            margin-top: 6px;
+            vertical-align: middle;
+            width: 100%;
+        }
+
+        @media screen and (max-width:800px) {
+            .colomn {
+                flex: 50%;
+                max-width: 100%;
+            }
+        }
+
+        @media screen and (max-width:600px) {
+            .colomn {
+                flex: 100%;
+                max-width: 100%;
+            }
+        }
+
+
+
+
+    </style>
+
+</head>
+
+<body>
+    <div class="header">
+        <h1>Image Gallery by Using FlexBox</h1>
+        <p>See the power of FlexBox</p>
+    </div>
+
+    <div class="row">
+        <div class="colomn">
+            <img src="resimler/banklar.jpg" alt="">
+            <img src="resimler/cafe.jpg" alt="">
+            <img src="resimler/çiftlik.jpg" alt="">
+            <img src="resimler/dağ.jpg" alt="">
+        </div>
+
+        <div class="colomn">
+            <img src="resimler/deniz.jpg" alt="">
+            <img src="resimler/gar.jpg" alt="">
+            <img src="resimler/gezgin.jpg" alt="">
+            <img src="resimler/gökyüzü.jpg" alt="">
+        </div>
+
+        <div class="colomn">
+            <img src="resimler/kumsal.jpg" alt="">
+            <img src="resimler/manzara.jpg" alt="">
+            <img src="resimler/palmiyeler.jpg" alt="">
+            <img src="resimler/pencere.jpg" alt="">
+        </div>
+
+        <div class="colomn">
+            <img src="resimler/sis.jpg" alt="">
+            <img src="resimler/sokak.jpg" alt="">
+            <img src="resimler/sokak2.jpg" alt="">
+            <img src="resimler/yeşilyol.jpg" alt="">
+        </div>
+
+    </div>
+
+
+
+</body>
+
+</html>
